@@ -1,8 +1,14 @@
 #!/bin/bash
 set -e
 
-# Pull the Docker image from Docker Hub
-docker pull vamshikrishnasiribommala/simple-python-flask-app
+echo "Stopping old container..."
+docker stop flask-app || true
+docker rm flask-app || true
 
-# Run the Docker container
-docker run -d -p 5000:5000 vamshikrishnasiribommala/simple-python-flask-app
+echo "Pulling latest image..."
+docker pull vamshikrishnasiribommala/simple-python-flask-app:latest
+
+echo "Running container..."
+docker run -d -p 5000:5000 --name flask-app vamshikrishnasiribommala/simple-python-flask-app:latest
+
+echo "Deployment successful 🚀"
