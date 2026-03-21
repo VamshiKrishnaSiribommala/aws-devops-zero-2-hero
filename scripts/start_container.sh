@@ -1,8 +1,12 @@
 #!/bin/bash
 set -e
 
-# Pull the latest image from Docker Hub
+# Pull the latest image
 docker pull vamshikrishnasiribommala/simple-python-flask-app:latest
 
-# Run the Docker image as a container on port 5000
+# Stop and remove old container if it exists
+docker stop flask-app || true
+docker rm flask-app || true
+
+# Start the new container
 docker run -d -p 5000:5000 --name flask-app vamshikrishnasiribommala/simple-python-flask-app:latest
