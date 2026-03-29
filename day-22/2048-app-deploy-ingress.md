@@ -2,6 +2,7 @@
 
 ## Create Fargate profile
 
+
 ```
 eksctl create fargateprofile \
     --cluster demo-cluster \
