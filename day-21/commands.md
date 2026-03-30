@@ -6,3 +6,4 @@ $ docker build -t <account-id>.dkr.ecr.<region>.amazonaws.com/<repo-name>:latest
 
 # Push the Docker image to ECR (replace <repo-name> with your ECR repository name)
 $ docker push <account-id>.dkr.ecr.<region>.amazonaws.com/<repo-name>:latest
+
