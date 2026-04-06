@@ -8,6 +8,7 @@ In the ever-evolving world of cloud computing, containerization has emerged as a
 This blog post aims to be your ultimate guide to AWS ECS. We'll start from the fundamentals and gradually delve into the comparisons with its alternatives. We'll also discuss the pros and cons of ECS, provide step-by-step instructions for installation and configuration, and finally, guide you through deploying your first application on ECS.
 
 ## Table of Contents
+
 1. What is AWS ECS?
 2. Why Choose ECS Over Other Container Orchestration Tools?
 3. ECS Fundamentals
