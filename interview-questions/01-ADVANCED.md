@@ -4,6 +4,7 @@
 ### 2. **Question:** How does AWS CodeArtifact enhance dependency management in DevOps workflows?
 **Answer:** AWS CodeArtifact is a package management service that allows you to store, manage, and share software packages. It improves dependency management by centralizing artifact storage, ensuring consistency across projects, and enabling version control of packages, making it easier to manage dependencies in DevOps pipelines.
 
+
 ### 3. **Question:** Describe the use of AWS CloudFormation Drift Detection and Remediation.
 **Answer:** AWS CloudFormation Drift Detection helps identify differences between the deployed stack and the expected stack configuration. When drift is detected, you can use CloudFormation StackSets to automatically remediate drift across multiple accounts and regions, ensuring consistent infrastructure configurations.
 
